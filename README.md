@@ -53,7 +53,7 @@ Dependencies:
 ## Dataset Structure
 
 Expected dataset layout:
-
+```
 generated/
 └── meshes/
     └── 000001/
@@ -61,7 +61,7 @@ generated/
         ├── face_000_000_000_0000.pt
         ├── vert_000_000_000_0001.pt
         ├── face_000_000_000_0001.pt
-
+```
 ---
 
 ## Quick Start
@@ -86,7 +86,11 @@ Metrixel converts FBX, GLTF/GLB, and OBJ assets into structured datasets includi
 • Multi‑view render sequences  
 • Extracted textures  
 
-Learn more: https://metrixel.ai
+Learn more: 
+
+• https://www.entvistastudio.com/ai-tools
+
+• https://www.entvistastudio.com/ai-tools/metrixel
 
 ---
 
