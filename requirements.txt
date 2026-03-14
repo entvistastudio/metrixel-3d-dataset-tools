@@ -1,0 +1,7 @@
+# Metrixel Mesh Visualization Tools - Requirements
+# Install with: pip install -r requirements.txt
+
+# Core dependencies for mesh visualization
+torch>=2.0.0          # For loading .pt tensor files
+matplotlib>=3.5.0     # For 3D mesh visualization
+numpy>=1.21.0         # For numerical operations
