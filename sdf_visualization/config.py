@@ -2,7 +2,7 @@
 #  *                                                                             *
 #  *  Metrixel - Cross-platform Application                                      *
 #  *                                                                             *
-#  *  Copyright © 2025 EntertainmentVista Studio Pte. Ltd.                       *
+#  *  Copyright © 2026 EntertainmentVista Studio Pte. Ltd.                       *
 #  *  All rights reserved.                                                       *
 #  *                                                                             *
 # *******************************************************************************

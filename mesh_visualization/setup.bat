@@ -3,7 +3,7 @@ REM ****************************************************************************
 REM  *                                                                             *
 REM  *  Metrixel - Cross-platform Application                                      *
 REM  *                                                                             *
-REM  *  Copyright (c) 2025 EntertainmentVista Studio Pte. Ltd.                     *
+REM  *  Copyright (c) 2026 EntertainmentVista Studio Pte. Ltd.                     *
 REM  *  All rights reserved.                                                       *
 REM  *                                                                             *
 REM  *  Metrixel is a custom-built C/C++ application designed to read 3D           *

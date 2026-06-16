@@ -2,7 +2,7 @@
 #  *                                                                             *
 #  *  Metrixel - Cross-platform Application                                      *
 #  *                                                                             *
-#  *  Copyright © 2025 EntertainmentVista Studio Pte. Ltd.                       *
+#  *  Copyright © 2026 EntertainmentVista Studio Pte. Ltd.                       *
 #  *  All rights reserved.                                                       *
 #  *                                                                             *
 #  *  Metrixel is a custom-built C/C++ application designed to read 3D           *
