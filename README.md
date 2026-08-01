@@ -18,14 +18,18 @@ Part of the **Metrixel ecosystem** for generating 3D datasets for AI pipelines.
 
 ## Repository layout
 
-The repo is split into two independent toolsets, each with its own `requirements.txt` and entry-point scripts:
+The repo is split into independent toolsets, each with its own `requirements.txt` and entry-point scripts:
 
 ```
 metrixel-3d-dataset-tools/
-├── mesh_visualization/     # PyTorch .pt mesh tensors — preview + animate
+├── mesh_visualization/     # PyTorch .pt mesh tensors — preview + animate   (torch + matplotlib)
+├── mesh_validation/        # PyTorch .pt mesh tensors — verify they are sound (numpy only, headless)
 ├── sdf_visualization/      # SDF .bin volumes — iso-surface + orthogonal slices
 └── examples/               # sample dataset for a quick first run
 ```
+
+`mesh_validation` is the only one with no display or torch dependency — it is meant for CI runners,
+containers and SSH-only hosts.
 
 ---
 
@@ -62,6 +66,19 @@ python animate_mesh_metrixel.py --mesh_dataset_root /path/to/generated/meshes --
 ```
 
 ---
+
+## Mesh Validation (`mesh_validation/`)
+
+Check that `.pt` exports are loadable and internally consistent — truncated writes, NaN vertices,
+out-of-range face indices, frames missing a tensor. **numpy only**: no torch, no matplotlib, no
+display, so it runs on CI runners, in containers, and over SSH where the visualization tools cannot.
+
+```bash
+python mesh_validation/validate_mesh_metrixel.py /data/out          # human-readable
+python mesh_validation/validate_mesh_metrixel.py /data/out --json   # for CI
+```
+
+Exit codes: `0` all valid · `1` problems found · `2` nothing found. See `mesh_validation/README.md`.
 
 ## SDF Visualization (`sdf_visualization/`)
 

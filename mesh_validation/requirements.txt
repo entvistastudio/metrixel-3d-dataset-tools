@@ -1,0 +1,6 @@
+# Metrixel Mesh Validation - Requirements
+# Install with: pip install -r requirements.txt
+
+# Deliberately minimal. This tool exists to run where the visualization tools cannot:
+# CI runners, containers, and headless training hosts. No torch, no matplotlib, no display.
+numpy>=1.21.0
