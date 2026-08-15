@@ -1,0 +1,5 @@
+# Either provides a SummaryWriter; the script prefers torch and falls back to tensorboardX.
+# Both are normally already present in an ML environment, and neither is needed by Metrixel itself.
+tensorboard>=2.14
+# torch>=2.0          # provides torch.utils.tensorboard
+# tensorboardX>=2.6   # standalone alternative
